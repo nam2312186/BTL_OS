@@ -145,7 +145,7 @@
      }
      struct queue_t *running_queue = caller->running_list;
      int j = 0;
-     while( i < running_queue->size){
+     while( j < running_queue->size){
          struct pcb_t *proc = running_queue->proc[j];
          char *proc_name_in_path = strrchr(proc->path, '/');
          if(proc_name_in_path) proc_name_in_path++;
